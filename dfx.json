@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "wasteData_backend": {
+      "main": "src/wasteData_backend/main.mo",
+      "type": "motoko"
+    },
+    "wasteData_frontend": {
+      "dependencies": [
+        "wasteData_backend"
+      ],
+      "source": [
+        "src/wasteData_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "wasteData_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
